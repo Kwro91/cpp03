@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 14:31:16 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/16 14:49:18 by besalort         ###   ########.fr       */
+/*   Updated: 2024/07/18 13:19:53 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,18 @@
 
 class ScavTrap : public ClapTrap {
 	private :
+		bool guardingGate;
 
 	public :
+		ScavTrap();
 		ScavTrap(std::string Name);
 		~ScavTrap();
 		ScavTrap(const ScavTrap &scav);
 		ScavTrap & operator = (const ScavTrap &scav);
 
-		void guardGate();
+		void	attack(const std::string& target);
+		void	beRepaired(unsigned int amount);
+		void	guardGate();
 	
 };
 

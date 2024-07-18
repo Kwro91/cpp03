@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 16:24:22 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/16 15:07:20 by besalort         ###   ########.fr       */
+/*   Updated: 2024/07/18 13:26:06 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,12 @@
 
 class ClapTrap {
 	protected :
-		std::string	Name;
-		int 		Hit;
-		int			Energy;
-		int			AttackDmg;
+		std::string		Name;
+		unsigned int	Hit;
+		unsigned int	Energy;
+		unsigned int	AttackDmg;
 	public :
+		ClapTrap();
 		ClapTrap(std::string Name);
 		~ClapTrap();
 		ClapTrap(const ClapTrap &clap);

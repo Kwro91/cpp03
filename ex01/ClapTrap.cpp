@@ -6,13 +6,17 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:25:22 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/16 17:35:23 by besalort         ###   ########.fr       */
+/*   Updated: 2024/07/18 13:25:29 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 #include "ClapTrap.hpp"
+
+ClapTrap::ClapTrap() : Name("Default"), Hit(10), Energy(10), AttackDmg(10) {
+	std::cout << "\033[1;32m" << "Claptrap " << this->Name << " is created\033[0m" << std::endl;
+}
 
 ClapTrap::ClapTrap(std::string Name) : Name(Name), Hit(10), Energy(10), AttackDmg(10){
 	std::cout << "\033[1;32m" << "Claptrap " << this->Name << " is created\033[0m" << std::endl;	
@@ -54,7 +58,10 @@ void	ClapTrap::takeDamage(unsigned int amount) {
 		std::cout << "ClapTrap " << this->Name << " is turned to dust" << std::endl;
 		return ;
 	}
-	this->Hit -= amount;
+	if (amount > this->Hit)
+		this->Hit = 0;
+	else
+		this->Hit -= amount;
 	if (this->Hit <= 0)
 	{
 		this->Hit = 0;
