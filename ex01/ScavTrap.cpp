@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 14:45:16 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/18 15:13:20 by besalort         ###   ########.fr       */
+/*   Updated: 2024/07/18 16:29:56 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,28 @@ void	ScavTrap::beRepaired(unsigned int amount) {
 	}
 	else
 		std::cout << "ScavTrap " << this->Name << " have no more Energy left to repair" << std::endl;
+}
+
+void	ScavTrap::takeDamage(unsigned int amount) {
+	if (this->Hit == 0)
+	{
+		std::cout << "ScavTrap " << this->Name << " is turned to dust" << std::endl;
+		return ;
+	}
+	if (amount > this->Hit)
+		this->Hit = 0;
+	else
+		this->Hit -= amount;
+	if (this->Hit <= 0)
+	{
+		this->Hit = 0;
+		std::cout << "ScavTrap " << this->Name << " take " << amount << " damage and is destroyed" << std::endl;
+	}
+	else
+	{
+		std::cout << "ScavTrap " << this->Name << " take " << amount << " damage and get " << this->Hit << " HP left" << std::endl;
+	}
+	
 }
 
 void	ScavTrap::guardGate() {

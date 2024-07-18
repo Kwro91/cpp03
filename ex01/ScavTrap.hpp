@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 14:31:16 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/18 13:19:53 by besalort         ###   ########.fr       */
+/*   Updated: 2024/07/18 16:30:51 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ class ScavTrap : public ClapTrap {
 
 		void	attack(const std::string& target);
 		void	beRepaired(unsigned int amount);
+		void	takeDamage(unsigned int amount);
 		void	guardGate();
 	
 };
