@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 14:37:58 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/18 13:29:43 by besalort         ###   ########.fr       */
+/*   Updated: 2024/07/18 15:09:27 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ int main()
 	New.takeDamage(90);
 	New.attack("test");
 	New.beRepaired(100);
+	New.guardGate();
+	New.guardGate();
 	New.takeDamage(9999);
 	return 0;
 }

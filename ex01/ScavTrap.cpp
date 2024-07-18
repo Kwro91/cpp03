@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 14:45:16 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/18 13:19:13 by besalort         ###   ########.fr       */
+/*   Updated: 2024/07/18 15:13:20 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,11 +80,8 @@ void	ScavTrap::guardGate() {
 	if (this->guardingGate == false)
 	{
 		this->guardingGate = true;
-		std::cout << "ScavTrap " << this->Name << " is GuardGating" << std::endl;
+		std::cout << "ScavTrap " << this->Name << " is guarding the gate" << std::endl;
 	}
 	else
-	{
-		this->guardingGate = false;
-		std::cout << "ScavTrap " << this->Name << " is no more in GuardGate mode" << std::endl;
-	}
+		std::cout << "ScavTrap " << this->Name << " is already guarding the gate" << std::endl;
 }
