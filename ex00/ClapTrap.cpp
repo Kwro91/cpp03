@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:25:22 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/01 17:24:36 by besalort         ###   ########.fr       */
+/*   Updated: 2024/07/18 13:43:05 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,10 @@ void	ClapTrap::takeDamage(unsigned int amount) {
 		std::cout << "ClapTrap " << this->Name << " is turned to dust" << std::endl;
 		return ;
 	}
-	this->Hit -= amount;
+	if (amount > this->Hit)
+		this->Hit = 0;
+	else
+		this->Hit -= amount;
 	if (this->Hit <= 0)
 	{
 		this->Hit = 0;
