@@ -6,11 +6,11 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 14:45:16 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/18 16:29:56 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:36:20 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "../includes/ScavTrap.hpp"
 
 ScavTrap::ScavTrap() : ClapTrap() {
 	this->Hit = 100;

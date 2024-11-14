@@ -6,15 +6,16 @@
 #    By: besalort <besalort@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/01 17:09:34 by besalort          #+#    #+#              #
-#    Updated: 2024/11/14 17:36:37 by besalort         ###   ########.fr        #
+#    Updated: 2024/11/14 17:33:43 by besalort         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = scavtrap
+NAME = fragtrap
 
 SRC = ./srcs/main.cpp \
 	./srcs/ClapTrap.cpp \
 	./srcs/ScavTrap.cpp \
+	./srcs/FragTrap.cpp \
 
 CC =	c++
 

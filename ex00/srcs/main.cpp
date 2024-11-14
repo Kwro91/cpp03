@@ -5,17 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/16 14:37:58 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/18 15:09:27 by besalort         ###   ########.fr       */
+/*   Created: 2024/06/28 17:03:45 by besalort          #+#    #+#             */
+/*   Updated: 2024/11/14 17:37:22 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
+#include "../includes/ClapTrap.hpp"
 
-int main()
-{
-	ScavTrap New("Scavenger");
+int main() {
+	ClapTrap New("OriginalClap");
 	New.attack("Le beau Jack"); //1
 	New.takeDamage(8);
 	New.beRepaired(2); //2
@@ -31,11 +29,8 @@ int main()
 	New.beRepaired(2); //11
 	New.attack("Le beau Jack"); //12
 	
-	New.takeDamage(90);
+	New.takeDamage(18);
 	New.attack("test");
 	New.beRepaired(100);
-	New.guardGate();
-	New.guardGate();
-	New.takeDamage(9999);
-	return 0;
+	New.takeDamage(69);
 }

@@ -6,13 +6,17 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:25:22 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/18 13:43:05 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:34:13 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
-#include "ClapTrap.hpp"
+#include "../includes/ClapTrap.hpp"
+
+ClapTrap::ClapTrap() : Name("Default"), Hit(10), Energy(10), AttackDmg(10) {
+	std::cout << "\033[1;32m" << "Claptrap " << this->Name << " is created\033[0m" << std::endl;
+}
 
 ClapTrap::ClapTrap(std::string Name) : Name(Name), Hit(10), Energy(10), AttackDmg(10){
 	std::cout << "\033[1;32m" << "Claptrap " << this->Name << " is created\033[0m" << std::endl;	

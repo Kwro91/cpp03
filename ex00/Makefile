@@ -6,14 +6,14 @@
 #    By: besalort <besalort@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/01 17:09:34 by besalort          #+#    #+#              #
-#    Updated: 2024/07/01 17:10:00 by besalort         ###   ########.fr        #
+#    Updated: 2024/11/14 17:37:31 by besalort         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = claptrap
 
-SRC = ./main.cpp \
-	./ClapTrap.cpp \
+SRC = ./srcs/main.cpp \
+	./srcs/ClapTrap.cpp \
 
 CC =	c++
 
