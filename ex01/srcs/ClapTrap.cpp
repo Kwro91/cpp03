@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:25:22 by besalort          #+#    #+#             */
-/*   Updated: 2024/11/14 17:36:10 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:43:17 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 #include "../includes/ClapTrap.hpp"
 
 ClapTrap::ClapTrap() : Name("Default"), Hit(10), Energy(10), AttackDmg(10) {
-	std::cout << "\033[1;32m" << "Claptrap " << this->Name << " is created\033[0m" << std::endl;
+	std::cout << GREEN << "Claptrap " << this->Name << " is created" << WHITE << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string Name) : Name(Name), Hit(10), Energy(10), AttackDmg(10){
-	std::cout << "\033[1;32m" << "Claptrap " << this->Name << " is created\033[0m" << std::endl;	
+	std::cout << GREEN << "Claptrap " << this->Name << " is created" << WHITE << std::endl;	
 }
 
 ClapTrap::~ClapTrap() {
-	std::cout << "\033[1;31m" << "Claptrap " << this->Name << " is destroyed\033[0m" << std::endl;
+	std::cout << RED << "Claptrap " << this->Name << " is destroyed" << WHITE << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &clap) {

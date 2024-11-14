@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 14:45:16 by besalort          #+#    #+#             */
-/*   Updated: 2024/11/14 17:34:29 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:44:29 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ ScavTrap::ScavTrap() : ClapTrap() {
 	this->Energy = 50;
 	this->AttackDmg = 20;
 	this->guardingGate = false;
-	std::cout << "\033[1;32m" << "ScavTrap " << this->Name << " is created\033[0m" << std::endl;
+	std::cout << GREEN << "ScavTrap " << this->Name << " is created\033[0m" << std::endl;
 }
 
 ScavTrap::ScavTrap(std::string Name) : ClapTrap(Name) {
@@ -25,7 +25,7 @@ ScavTrap::ScavTrap(std::string Name) : ClapTrap(Name) {
 	this->Energy = 50;
 	this->AttackDmg = 20;
 	this->guardingGate = false;
-	std::cout << "\033[1;32m" << "ScavTrap " << this->Name << " is created\033[0m" << std::endl;
+	std::cout << GREEN << "ScavTrap " << this->Name << " is created\033[0m" << std::endl;
 }
 
 ScavTrap::~ScavTrap() {

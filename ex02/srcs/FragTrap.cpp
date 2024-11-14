@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 16:33:43 by besalort          #+#    #+#             */
-/*   Updated: 2024/11/14 17:34:19 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:47:13 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,18 @@ FragTrap::FragTrap() : ClapTrap() {
 	this->Hit = 100;
 	this->Energy = 100;
 	this->AttackDmg = 30;
-	std::cout << "\033[1;32m" << "FragTrap " << this->Name << " is created\033[0m" << std::endl;
+	std::cout << GREEN << "FragTrap " << this->Name << " is created" << WHITE << std::endl;
 }
 
 FragTrap::FragTrap(std::string Name) : ClapTrap(Name) {
 	this->Hit = 100;
 	this->Energy = 100;
 	this->AttackDmg = 30;
-	std::cout << "\033[1;32m" << "FragTrap " << this->Name << " is created\033[0m" << std::endl;
+	std::cout << GREEN << "FragTrap " << this->Name << " is created" << WHITE << std::endl;
 }
 
 FragTrap::~FragTrap() {
-	std::cout << "\033[1;31m" << "FragTrap " << this->Name << " is destroyed\033[0m" << std::endl;
+	std::cout << RED << "FragTrap " << this->Name << " is destroyed" << WHITE << std::endl;
 }
 
 FragTrap::FragTrap(const FragTrap &Frag) : ClapTrap(Frag) {

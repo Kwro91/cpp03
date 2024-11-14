@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 16:24:22 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/18 13:26:06 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:45:37 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 
 #ifndef CLAPTRAP_HPP
 #define CLAPTRAP_HPP
+
+#define WHITE "\033[0m"
+#define RED "\033[1;31m"
+#define BLUE "\033[1;34m"
+#define GREEN "\033[1;32m"
 
 class ClapTrap {
 	protected :
